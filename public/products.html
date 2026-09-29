@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpiderCruze | Spider-Man Collection</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Product image sizing */
+        .product-image {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: #f5f5f5;
+            border-radius: 10px;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* Multiple image thumbnails */
+        .image-options {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .image-options img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+            background: white;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            cursor: pointer;
+            padding: 2px;
+        }
+
+        .image-options img:hover {
+            border-color: #e00000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🕷️ SPIDERCRUZE</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="index.html#purpose">Our Purpose</a>
+        <a href="index.html#story">My Story</a>
+    </nav>
+
+</header>
+
+
+<section class="shop">
+
+    <p class="section-label">THE SPIDERCRUZE COLLECTION</p>
+
+    <h2>EVERYTHING SPIDEY.</h2>
+
+    <p class="shop-intro">
+        A collection created for people who never completely
+        grew out of their Spider-Man phase.
+    </p>
+
+
+    <!-- ==================== CLOTHING ==================== -->
+
+    <h3 class="category-title">🕷️ CLOTHING</h3>
+
+    <div class="products">
+
+
+        <!-- 1. HOODIE -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    src="https://animeape.com/wp-content/uploads/2024/02/Spiderman-Marvel-Comics_Hoodie-FRONT-mockup.jpg"
+                    alt="Spider-Man Classic Hoodie">
+            </div>
+
+            <h3>Spider-Man Classic Hoodie</h3>
+
+            <p>Red web-pattern hoodie with Spider-Man emblem.</p>
+
+            <h4>₹1,499</h4>
+
+            <button onclick="addToCart('Spider-Man Classic Hoodie',1499)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+
+        <!-- 2. T-SHIRT -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    src="https://i.etsystatic.com/50959589/r/il/b1205d/5906980249/il_794xN.5906980249_ove7.jpg"
+                    alt="Spider-Man Graphic T-Shirt">
+            </div>
+
+            <h3>Spider-Man Graphic T-Shirt</h3>
+
+            <p>Classic Spider-Man graphic tee.</p>
+
+            <h4>₹799</h4>
+
+            <button onclick="addToCart('Spider-Man Graphic T-Shirt',799)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+
+        <!-- 3. JACKET -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    src="https://www.usaleatherfactory.com/wp-content/uploads/2023/08/andrew-garfield-the-amazing-spiderman-jacket-men.jpg"
+                    alt="Spider-Man Web Jacket">
+            </div>
+
+            <h3>Spider-Man Web Jacket</h3>
+
+            <p>Red Spider-Man jacket with web detailing.</p>
+
+            <h4>₹2,499</h4>
+
+            <button onclick="addToCart('Spider-Man Web Jacket',2499)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+
+        <!-- 4. CARGO JOGGERS -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    src="https://i.pinimg.com/736x/3c/ad/65/3cad650c1888eb3ca9759e3e6de48d86.jpg"
+                    alt="Spider-Man Cargo Joggers">
+            </div>
+
+            <h3>Spider-Man Cargo Joggers</h3>
+
+            <p>Black cargos with red Spider-Man web details.</p>
+
+            <h4>₹1,799</h4>
+
+            <button onclick="addToCart('Spider-Man Cargo Joggers',1799)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================== ACCESSORIES ==================== -->
+
+    <h3 class="category-title">🕸️ ACCESSORIES</h3>
+
+    <div class="products">
+
+
+        <!-- 5. CAP -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.GCue2FlxYGwqUAb3abIHUwHaHa?r=0&pid=Api&h=220&P=0"
+                    alt="Spider-Man Web Cap">
+            </div>
+
+            <h3>Spider-Man Web Cap</h3>
+
+            <p>Red and blue cap with Spider-Man spider emblem.</p>
+
+            <h4>₹999</h4>
+
+            <button onclick="addToCart('Spider-Man Web Cap',999)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+
+        <!-- 6. BACKPACK -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    src="https://i.ebayimg.com/images/g/B00AAOSwPZBnVUjC/s-l1600.jpg"
+                    alt="Spider-Man Classic Backpack">
+            </div>
+
+            <h3>Spider-Man Classic Backpack</h3>
+
+            <p>Red and blue web-pattern Spider-Man backpack.</p>
+
+            <h4>₹1,999</h4>
+
+            <button onclick="addToCart('Spider-Man Classic Backpack',1999)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+
+        <!-- 7. WATCH -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.5X4AYaEJxN8Mwk2_4CTnAwHaHa?r=0&pid=Api&h=220&P=0"
+                    alt="Spider-Man Web Watch">
+            </div>
+
+            <h3>Spider-Man Web Watch</h3>
+
+            <p>Black and red Spider-Man inspired watch.</p>
+
+            <h4>₹2,499</h4>
+
+            <button onclick="addToCart('Spider-Man Web Watch',2499)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+
+        <!-- 8. MASK WITH MULTIPLE OPTIONS -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    id="mask-main"
+                    src="https://i.etsystatic.com/39155805/r/il/7767cf/7159971156/il_fullxfull.7159971156_n5zd.jpg"
+                    alt="Spider-Man Mask">
+            </div>
+
+            <div class="image-options">
+
+                <img
+                    src="https://i.etsystatic.com/39155805/r/il/7767cf/7159971156/il_fullxfull.7159971156_n5zd.jpg"
+                    onclick="changeImage('mask-main', this.src)"
+                    alt="Spider-Man Mask Option 1">
+
+                <img
+                    src="https://m.media-amazon.com/images/I/61Y7hcaBmzL._SL1024_.jpg"
+                    onclick="changeImage('mask-main', this.src)"
+                    alt="Spider-Man Mask Option 2">
+
+            </div>
+
+            <h3>Spider-Man Mask</h3>
+
+            <p>Classic Spider-Man mask inspired design.</p>
+
+            <h4>₹1,299</h4>
+
+            <button onclick="addToCart('Spider-Man Mask',1299)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================== FOOTWEAR ==================== -->
+
+    <h3 class="category-title">👟 SPIDEY FOOTWEAR</h3>
+
+    <div class="products">
+
+
+        <!-- 9. SNEAKERS -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    src="https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/651510.jpg"
+                    alt="Spider-Man Sneakers">
+            </div>
+
+            <h3>Spider-Man Sneakers</h3>
+
+            <p>Red, blue and black Spider-Man sneakers.</p>
+
+            <h4>₹2,999</h4>
+
+            <button onclick="addToCart('Spider-Man Sneakers',2999)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+
+        <!-- 10. SOCKS -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    src="https://i.pinimg.com/originals/22/3b/11/223b117041b8cddd54a784554ce03212.jpg"
+                    alt="Spider-Man Web Socks">
+            </div>
+
+            <h3>Spider-Man Web Socks</h3>
+
+            <p>Spider-Man themed socks with web graphics.</p>
+
+            <h4>₹399</h4>
+
+            <button onclick="addToCart('Spider-Man Web Socks',399)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+
+        <!-- 11. HIGH TOPS -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    src="https://img.thesitebase.net/10657/10657657/products/ver_1/gexdmnbxguCdmmjygCztkmbwgexdambqgaxdknrvhaAdkmbygiAtonbwgqxtmnq.jpeg"
+                    alt="Spider-Man High-Tops">
+            </div>
+
+            <h3>Spider-Man High-Tops</h3>
+
+            <p>Red and blue high-top superhero sneakers.</p>
+
+            <h4>₹3,499</h4>
+
+            <button onclick="addToCart('Spider-Man High-Tops',3499)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+
+        <!-- 12. SLIDES -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    src="https://tse3.mm.bing.net/th/id/OIP.p8a5NJIcxxEIjH6IiU93TAAAAA?r=0&pid=Api&h=220&P=0"
+                    alt="Spider-Man Web Slides">
+            </div>
+
+            <h3>Spider-Man Web Slides</h3>
+
+            <p>Casual slides with Spider-Man web graphics.</p>
+
+            <h4>₹899</h4>
+
+            <button onclick="addToCart('Spider-Man Web Slides',899)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================== TECH ==================== -->
+
+    <h3 class="category-title">💻 SPIDEY TECH</h3>
+
+    <div class="products">
+
+
+        <!-- 13. PHONE CASE WITH MULTIPLE OPTIONS -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    id="phonecase-main"
+                    src="https://i.pinimg.com/originals/50/fa/9e/50fa9e8c6b8c43ed514871d75098a627.webp"
+                    alt="Spider-Man Phone Case">
+            </div>
+
+            <div class="image-options">
+
+                <img
+                    src="https://i.pinimg.com/originals/50/fa/9e/50fa9e8c6b8c43ed514871d75098a627.webp"
+                    onclick="changeImage('phonecase-main', this.src)"
+                    alt="Spider-Man Phone Case Option 1">
+
+                <img
+                    src="https://i.pinimg.com/originals/50/df/1a/50df1ad53dfb2dcde5029a386c81d3ed.jpg"
+                    onclick="changeImage('phonecase-main', this.src)"
+                    alt="Spider-Man Phone Case Option 2">
+
+                <img
+                    src="https://i.etsystatic.com/47311882/r/il/60e8eb/5995264413/il_800x800.5995264413_ekri.jpg"
+                    onclick="changeImage('phonecase-main', this.src)"
+                    alt="Spider-Man Phone Case Option 3">
+
+            </div>
+
+            <h3>Spider-Man Phone Case</h3>
+
+            <p>Red web-pattern Spider-Man phone case.</p>
+
+            <h4>₹899</h4>
+
+            <button onclick="addToCart('Spider-Man Phone Case',899)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+
+        <!-- 14. HEADPHONES -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    src="https://i5.walmartimages.com/seo/Spiderman-Headphones-for-Kids-Volume-Limiting_4ef0148d-e74f-4b55-9f8d-73d49a15985c.33fdb2e0de58dcf941cf9ddd7e8eaf81.jpeg"
+                    alt="Spider-Man Headphones">
+            </div>
+
+            <h3>Spider-Man Headphones</h3>
+
+            <p>Black headphones with Spider-Man graphics.</p>
+
+            <h4>₹2,499</h4>
+
+            <button onclick="addToCart('Spider-Man Headphones',2499)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+
+        <!-- 15. DIGITAL WATCH -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.5gMze3hMh-SVJGvI9BvXAgHaHa?r=0&pid=Api&h=220&P=0"
+                    alt="Spider-Man Digital Watch">
+            </div>
+
+            <h3>Spider-Man Digital Watch</h3>
+
+            <p>Red digital watch with Spider-Man artwork.</p>
+
+            <h4>₹1,499</h4>
+
+            <button onclick="addToCart('Spider-Man Digital Watch',1499)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+
+        <!-- 16. TECH CASE -->
+
+        <div class="product">
+
+            <div class="product-image">
+                <img
+                    src="https://i5.walmartimages.com/seo/Innovative-Designs-Hard-Shell-Molded-Zippered-Pencil-Storage-Case-Spider-Man_607d66c7-4df1-43a4-9365-2e162f4d201e.a17be7688f9ca15cfc7aa1d796ba6a06.jpeg"
+                    alt="Spider-Man Tech Case">
+            </div>
+
+            <h3>Spider-Man Tech Case</h3>
+
+            <p>Spider-Man themed protective tech case.</p>
+
+            <h4>₹1,199</h4>
+
+            <button onclick="addToCart('Spider-Man Tech Case',1199)">
+                ADD TO CART
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h3>🕷️ SPIDERCRUZE</h3>
+
+    <p>
+        A student-created e-commerce concept inspired by
+        childhood, creativity and Spider-Man.
+    </p>
+
+    <p>
+        © 2026 SpiderCruze. Student Project.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+<script>
+
+    /* Changes the main product image when a thumbnail is clicked */
+
+    function changeImage(mainImageId, newImage) {
+        document.getElementById(mainImageId).src = newImage;
+    }
+
+</script>
+
+</body>
+
+</html>

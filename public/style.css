@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111;
+}
+
+header h1 {
+    color: #e50914;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 8%;
+    background: linear-gradient(90deg, #000000, #300000);
+}
+
+.hero h2 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: #e50914;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #ff2933;
+}
+
+.about {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111;
+    color: #aaa;
+}
+.shop {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.shop h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.product {
+    background: #151515;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    background: #222;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product h3 {
+    margin-bottom: 10px;
+}
+
+.product h4 {
+    color: #e50914;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.product button {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background: #ff2933;
+}
+
+@media (max-width: 900px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.category-title {
+    margin-top: 70px;
+    margin-bottom: 25px;
+    font-size: 28px;
+    text-align: left;
+    border-left: 5px solid #e50914;
+    padding-left: 15px;
+}
+```css
+/* =========================
+   SPIDERCRUZE HOMEPAGE
+   ========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 8%;
+    background:
+        radial-gradient(circle at 80% 40%, #450000, transparent 35%),
+        linear-gradient(120deg, #000000, #160000);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.small-title,
+.section-label {
+    color: #e50914;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 70px;
+    line-height: 0.95;
+    margin-bottom: 25px;
+}
+
+.hero h2 span {
+    color: #e50914;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.7;
+    color: #cccccc;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+
+/* PURPOSE */
+
+.purpose {
+    padding: 100px 12%;
+    text-align: center;
+    background: #101010;
+}
+
+.purpose h2,
+.story h2,
+.idea h2,
+.collection h2,
+.creator h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.purpose-text {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.9;
+    color: #cccccc;
+    font-size: 18px;
+}
+
+
+/* STORY */
+
+.story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 600px;
+}
+
+.story-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        radial-gradient(circle, #e50914 0%, #500000 25%, #080808 65%);
+}
+
+.spider-symbol {
+    font-size: 180px;
+    filter: drop-shadow(0 0 30px #e50914);
+}
+
+.story-content {
+    padding: 90px 10%;
+    background: #0b0b0b;
+}
+
+.story-content p {
+    color: #cccccc;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+
+/* IDEA */
+
+.idea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    padding: 100px 12%;
+    background: #151515;
+}
+
+.idea p {
+    color: #cccccc;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+/* COLLECTION */
+
+.collection {
+    text-align: center;
+    padding: 100px 20px;
+    background:
+        linear-gradient(135deg, #180000, #050505);
+}
+
+.collection p {
+    color: #cccccc;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* CREATOR */
+
+.creator {
+    text-align: center;
+    padding: 100px 20%;
+    background: #0b0b0b;
+}
+
+.creator p {
+    color: #cccccc;
+    line-height: 1.8;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+
+/* FINAL MESSAGE */
+
+.final-message {
+    text-align: center;
+    padding: 120px 20px;
+    background:
+        radial-gradient(circle, #500000, #050505 65%);
+}
+
+.final-message h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.final-message p {
+    color: #cccccc;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* FOOTER */
+
+footer h3 {
+    color: #e50914;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 48px;
+    }
+
+    .story,
+    .idea {
+        grid-template-columns: 1fr;
+    }
+
+    .story-image {
+        min-height: 350px;
+    }
+
+    .purpose h2,
+    .story h2,
+    .idea h2,
+    .collection h2,
+    .creator h2,
+    .final-message h2 {
+        font-size: 32px;
+    }
+
+    .creator {
+        padding: 80px 10%;
+    }
+}
+```
+.product-image {
+    width: 100%;
+    height: 240px;
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
